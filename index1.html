@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizzalicious</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/loggedIn.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+<script src="js/simpleCart.min.js"> </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+</head>
+<body>
+    <!-- header-section-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="top-header">
+				<div class="logo">
+					<img src="images/pizzalogo.jpg" width="60" height="55" />
+					Pizza Italiano
+				</div>
+				<div class="header-right">
+						<div class="cart box_1">
+							<a href="checkout.php">
+							<h3> Checkout<img src="images/bag1.png" alt=""></h3></a>
+							<div class="logout" id="logout-link">
+								Logout
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+				
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+			<div class="menu-bar">
+			<div class="container">
+				<div class="top-menu">
+					<ul>
+						<li class="active"><a href="#Home">Home</a></li>|
+						<li><a href="pizza.php">Pizza</a></li>|
+						<li><a href="contact.html">contact</a></li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="login-section">
+					<ul>
+						<li><a href="login.html">Login</a>  </li> |
+						<li><a href="register.html">Register</a> </li> |
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="banner wow fadeInUp" data-wow-delay="0.4s" id="Home">
+		    <h1>HONEST FOOD. DELIGHTFUL MEMORIES. </h1>
+		</div>
+	</div>
+	<!-- header-section-ends -->
+	<!-- content-section-starts -->
+			<div class="content container">
+				<h4>SUPERIOR RESTAURANT QUALITY FOOD AND SERVICE SINCE 2001</h4>
+					<br>
+					Founded on the idea of handshakes and hellos, Pizzalicious Restaurants has been serving iconic, award-winning pizzas and family Italian dishes since 1946.
+
+Everyone is always invited to the table seven days a week at any of our locations.
+
+The best pizza and pasta in the state of Texas.
+Whether you are in the mood to indulge in something new or just want to enjoy some old favorites, we promise that our inventive menu and on-time delivery will leave you truly satisfied.<br>
+No matter what your occasion calls for or your appetite demands, Pizzalicious promises to make your next pizza experience a pleasant one!
+In the restaurant business, there’s no hiding. Food is served in front of the customer, not in a box. A customer is waited on, not just delivered to. Each guest is attended to, not just another number in the queue. At the end, the checkout isn’t just a transaction. It’s a thank you and an invitation to come and see us again soon. At least that’s how we view it. At every turn, we try to make it as personal as possible. We can’t help it. We are a restaurant at heart.<br>
+
+					<div class="square">
+						<img src="images/pepperoni.jpg" width="340"  height="150" />
+							Ultimate Pepperoni<br>
+						<a href="pizza.html" ><img src="images/order-now.png" width="90"  height="35" /></a> 
+					</div>
+					
+					<div class="square">
+						<img src="images/cheese.jpg" width="340"  height="150" />
+							Original Basil Cheese<br>
+						<a href="pizza.html" ><img src="images/order-now.png" width="90"  height="35" /></a> 
+					</div>
+					<div class="square">
+						<img src="images/veggie.jpeg" width="340"  height="150" />
+							Veggie Delight<br>
+						<a href="pizza.html" style="margin-top: 30px;" ><img src="images/order-now.png" width="90"  height="35" /></a> 
+					</div>
+				</div>
+				
+					
+	</div>
+	<!-- content-section-ends -->
+	<!-- footer-section-starts -->
+	<div class="footer">
+		<div class="container">
+		
+			<p class="wow fadeInLeft" data-wow-delay="0.4s"> CONTACT INFORMATION - The University of Texas at Dallas </p>
+		</div>
+	</div>
+	<!-- footer-section-ends -->
+	  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

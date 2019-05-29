@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza Loco</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/admin.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--webfont-->
+<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<script src="js/validateLogin.js"></script>
+<script src="js/simpleCart.min.js"> </script>	
+<script type="text/javascript" src="js/loggedIn.js"></script>
+</head>
+<body>
+    <!-- header-section-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="top-header">
+				<div class="logo">
+					<p font-size:72px; display=inline;><img src="images/pizzaloca-logo.png" width="60" height="55" />
+					Pizza Loca...</p>
+
+				</div>
+				<div class="header-right">
+						<div class="cart box_1">
+							<a href="checkout.php">
+							<h3> Checkout<img src="images/bag1.png" alt=""></h3></a>
+							<div class="logout" id="logout-link">
+								Logout
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	    <div class="menu-bar">
+			<div class="container">
+				<div class="top-menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>|
+						<li><a href="pizza.php">Pizza</a></li>|
+						<li><a href="contact.html">contact</a></li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="login-section">
+					<ul>
+						<li class="active"><a href="login.html">Login</a>  </li> |
+						<li><a href="register.html">Register</a> </li> |
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	<!-- header-section-ends -->
+	<!-- content-section-starts -->
+	<div class="content">
+	 <div id="login-page">Please Logout</div>
+	<div class="container" id="login-form">
+		
+		<div class="register-bottom-grid ">
+			   <div class="col-md-6">
+				  	<h3>REGISTERED CUSTOMERS</h3>
+					<p>If you have an account with us, please log in.</p>
+					<form method="post">
+									<span>User name<label>*</label></span>
+									<input type="text" name="username" id="username">
+									<span class="error" id="usernameerror"> </span>
+								
+									<span>Password<label>*</label></span>
+									<input type="password" name="password" id="password">
+									<span class="error" id="passworderror"> </span>
+					  
+					  <button type="button" id="loginSubmit" class="acount-btn">Submit</button>
+				    </form>
+			   </div>
+				<div class="col-md-6">
+				  	 <h3>NEW CUSTOMERS</h3>
+					 <p>If you are a new customer, please click here.</p>
+					 <a class="acount-btn" href="register.html">Create an Account</a>
+			   </div>
+			   <div class="clearfix"> </div>
+			
+		</div>
+	</div>
+	</div>
+	
+	
+
+</body>
+</html>
